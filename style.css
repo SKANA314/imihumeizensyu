@@ -1,0 +1,178 @@
+html body{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+}
+/* ヘッダー要素 */
+header{
+    background-color: #333;
+    color: #eee;
+    /* width: 99%; */
+    padding-left: 1%;
+
+}
+header h1{
+    margin: 0;
+}
+header p{
+    margin: 0;
+}
+header a{
+    display: inline-block;
+    color: #aff;
+}
+/* メイン */
+main{
+    margin: 10px auto;
+    width: 80%;
+}
+main h2,main h3,main h4,main p{
+    margin: 0;
+}
+main h2{
+    margin-top: 3px;
+}
+/* フッター */
+footer{
+    margin: 0 auto;
+    width: 80%;
+}
+/* .box{
+    border: #666 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+} */
+/* ～～～メニュー～～～ */
+#menu{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #333;
+}
+#menu details{
+    position: relative;
+}
+details div{
+    display: inline;
+    white-space: nowrap;
+    position: absolute;
+}
+details li{
+    list-style: none;
+    padding: 3px 6px;
+    background-color: #555;
+}
+
+.no_list{
+    list-style: none;
+}
+#menu summary,#menu a{
+    color: #eee;
+    font-weight: bold;
+}
+/* ～～～ハンバーガーボタン～～～ */
+#hamburger{
+    display: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+/* ～～～テーブル～～～ */
+table,tr,td,th{
+    border: #666 1px solid;
+    border-collapse:  collapse;
+    padding: 0 5px; 
+    /* width: 33%; */
+}
+
+th{
+    width: 1px;
+    white-space: nowrap; 
+}
+/* データ共通 */
+.title{
+    background-color: #333;
+    text-align: left;
+    font-size: 24px;
+    color: #fefefe;
+}
+/* 魔法(テーブル形式) */
+.magic_square{
+    width: 24px;
+    height: 24px;
+    background-color: #fefefe;
+    float: left;
+    margin: 9px;
+}
+/* 特定のセルは最小化する */
+.category,.type,.target,.skill,.cost,.quantity,.ownership_type,.ingredients,.storage,.patient,.strength,.prerequisite,.rank,.attack,.defense,.sourse,.HP,.area{
+    white-space: nowrap; 
+}
+/* ～～～リスト～～～ */
+li{
+    list-style-position: inside;
+}
+/* ～～～スマホ対応～～～ */
+@media (max-width: 800px) {
+    main{
+        width: 95%;
+    }
+    header p{
+        margin:0 70px 0 0;
+    }
+    /* ～～～～～～ */
+    .grid{
+       display: block;
+    }
+    /* ～～～ハンバーガーボタン～～～ */
+    #hamburger{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        line-height: 50px;
+        background-color: #333;
+        color: #fefefe;
+        border: #fefefe 1px solid;
+    }
+    /* ～～～メニュー～～～ */
+    .menu{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        background-color: #fefefef0;
+        padding: 0 0 0 1%;
+    }
+    #menu{
+        flex-direction: column;
+        align-items:flex-start;
+        background-color: transparent;
+    }
+    #menu summary,#menu a{
+        color: #333;
+    }
+    details{
+        position: static;
+    }
+    details li{
+        background-color: transparent;
+    }
+    details div{
+        position: static;
+        white-space: normal;
+    }
+    
+}

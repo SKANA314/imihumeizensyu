@@ -1,0 +1,6 @@
+    各種アイテムの呼び出し方
+    <div class="呼び出したいアイテム形式">呼び出したいリストのID</div>    
+    
+    実例
+    魔法(表形式)
+    <div class="magic_table">template</div>
