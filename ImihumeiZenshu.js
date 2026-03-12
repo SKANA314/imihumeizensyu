@@ -114,10 +114,11 @@ window.addEventListener("resize",function(){
 
 function ApplyTemplate(classtype,id,list={key:{name:"",ruby:"",category:"",type:"",skill:"",target:"",cost:"",effect:"",invocation_verse:"",about:"",authority:"",rank:"",attack:"",defense:"",source:"",HP:"",area:"",soul_skill:"",true_form:"",storage:"",requirements:"",quantity:"",ownership_type:"",ingredients:"",desire:"",prerequisite:"",prescription:"",patient:"",strength:"",onset:""}}){
     // クラスに対応したテンプレートを割り当て
+    console.log(list);
     for(let i=0;i<id.length;i++){
         // テンプレートを割り当て
         switch (classtype) {
-            case "vermin":
+            case "character":
                 return(
                 `<div class="character">
                     <table>
