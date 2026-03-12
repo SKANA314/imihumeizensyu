@@ -1,0 +1,54 @@
+{
+"template":{
+    "name":"",
+    "ruby":"",
+    "category":"",
+    "rank":0,
+    "attack":0,
+    "defense":0,
+    "source":0,
+    "HP":0,
+    "area":"",
+    "skill":"",
+    "soul_skill":"",
+    "true_form":"",
+    "magic":"",
+    "about":"",
+    "authority":"<a  href=\"\"></a>"
+},
+"パズルゴーレム":{
+    "name":"パズルゴーレム",
+    "ruby":"",
+    "category":"害魔(災厄限種魔機属)",
+    "rank":4,
+    "attack":3,
+    "defense":3,
+    "source":3,
+    "HP":6,
+    "area":"夢",
+    "skill":"《大地》《肉》《謎》《悪意》",
+    "soul_skill":"",
+    "true_form":"防御強化",
+    "magic":"【緊急召喚】<br>【防壁(基本P.103)】<br>【再生(基本P.122)】<br><div class=\"magic_text\">崩れる体</div>",
+    "about":"異境に生息する害魔、攻撃を受けると体が分裂し、独立して行動するようになる。",
+    "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
+},
+"ピースゴーレム":{
+    "name":"ピースゴーレム",
+    "ruby":"",
+    "category":"害魔(微塵級時限種魔機属)",
+    "rank":2,
+    "attack":2,
+    "defense":2,
+    "source":2,
+    "HP":"X",
+    "area":"力",
+    "skill":"《雷》《流れ》《謎》《怠惰》",
+    "soul_skill":"",
+    "true_form":"元型変化※元型の象徴は《謎》になる",
+    "magic":"【無精(黄昏P.150)】<br>【寄攻(基本P.107)】",
+    "about":"パズルゴーレムの分体。他者を支援する能力に長ける。",
+    "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
+}
+
+}

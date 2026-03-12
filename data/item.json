@@ -1,0 +1,35 @@
+{
+"explanation":{
+    "name":"名前",
+    "ruby":"ふりがな",
+    "category":"タイプ(item、goodys、relic　のいずれか)",
+    "storage":"収蔵先",
+    "requirements":"使用資格",
+    "cost":"必要構成店",
+    "quantity":"個数",
+    "ownership_type":"所有形式",
+    "ingredients":"材料",
+    "skill":"指定特技",
+    "desire":"欲求",
+    "effect":"効果",
+    "about":"概説",
+    "authority":"<a  href=\"\">出典</a>"
+},
+"template":{
+    "name":"",
+    "ruby":"",
+    "category":"",
+    "storage":"",
+    "requirements":"",
+    "cost":"",
+    "quantity":"",
+    "ownership_type":"",
+    "ingredients":"",
+    "skill":"",
+    "desire":"",
+    "effect":"",
+    "about":"",
+    "authority":"<a  href=\"\"></a>"
+}
+
+}

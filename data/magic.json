@@ -1,4 +1,5 @@
-["template",{
+{
+"explanation":{
     "name":"名前",
     "ruby":"ふりがな",
     "category":"分類",
@@ -10,7 +11,19 @@
     "invocation_verse":"呪句",
     "about":"概要"
 },
-"転換",{
+"template":{
+    "name":"",
+    "ruby":"",
+    "category":"",
+    "type":"",
+    "skill":"",
+    "target":"",
+    "cost":"",
+    "effect":"",
+    "invocation_verse":"",
+    "about":""
+},
+"転換":{
     "name":"転換",
     "ruby":"スワップ",
     "category":"遺失魔法", 
@@ -23,7 +36,7 @@
     "about":"性転換を起こす魔法",
     "authority":"<a  href=\"https://talto.cc/projects/6pcWA-bPbmfAOhMsSBqL_\">病気の断章が見つかった！！！</a>"
 },
-"移動",{
+"移動":{
     "name":"移動",
     "ruby":"シフト",
     "category":"遺失魔法",
@@ -36,7 +49,7 @@
     "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型を移動させる魔法。",
     "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
 },
-"棘玉",{
+"棘玉":{
     "name":"棘玉",
     "ruby":"プリクル",
     "category":"遺失魔法",
@@ -49,7 +62,7 @@
     "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型に棘の鎧を装備する魔法。",
     "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
 },
-"登攀",{
+"登攀":{
     "name":"登攀",
     "ruby":"クライミング",
     "category":"遺失魔法",
@@ -62,7 +75,7 @@
     "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型に他の元型をよじ登ることができる腕を生やす。",
     "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
 },
-"崩れる体",{
+"崩れる体":{
     "name":"崩れる体",
     "ruby":"",
     "category":"",
@@ -75,4 +88,5 @@
     "about":"",
     "authority":""
 }
-]
+
+}
