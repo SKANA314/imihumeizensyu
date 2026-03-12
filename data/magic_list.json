@@ -1,0 +1,78 @@
+["template",{
+    "name":"名前",
+    "ruby":"ふりがな",
+    "category":"分類",
+    "type":"タイプ",
+    "skill":"指定特技",
+    "target":"目標",
+    "cost":"コスト",
+    "effect":"効果",
+    "invocation_verse":"呪句",
+    "about":"概要"
+},
+"転換",{
+    "name":"転換",
+    "ruby":"スワップ",
+    "category":"遺失魔法", 
+    "type":"呪文",
+    "skill":"エロス",
+    "target":"キャラクター1",
+    "cost":"獣2",
+    "effect":"自分の手番に使用できる。<br>指定特技の判定に成功すると、そのセッションの間、目標の性別を逆転させる。目標が「無性」など性別を持たない場合<a  href=\"\">「無性性性変化障害 」</a>を発症する。目標が「両性」など性転換できない性別場合、運命変転を受ける。",
+    "invocation_verse":"",
+    "about":"性転換を起こす魔法",
+    "authority":"<a  href=\"https://talto.cc/projects/6pcWA-bPbmfAOhMsSBqL_\">病気の断章が見つかった！！！</a>"
+},
+"移動",{
+    "name":"移動",
+    "ruby":"シフト",
+    "category":"遺失魔法",
+    "type":"呪文",
+    "skill":"なし",
+    "target":"本文参照",
+    "cost":"なし",
+    "effect":"自分の手番に使用できる。<br>「元型バトルシート」にいる元型1体を目標に選ぶ。目標のを横方向に1マス移動させる。移動するスペースがなければこの魔法は使用できない。",
+    "invocation_verse":"",
+    "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型を移動させる魔法。",
+    "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
+},
+"棘玉",{
+    "name":"棘玉",
+    "ruby":"プリクル",
+    "category":"遺失魔法",
+    "type":"装備",
+    "skill":"なし",
+    "target":"自分",
+    "cost":"なし",
+    "effect":"「元型バトルシート」にいる自分の元型の上に他の元型がぶつかったとき、ぶつかった元型を使役しているキャラクターに1点のダメージを与える。",
+    "invocation_verse":"",
+    "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型に棘の鎧を装備する魔法。",
+    "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
+},
+"登攀",{
+    "name":"登攀",
+    "ruby":"クライミング",
+    "category":"遺失魔法",
+    "type":"装備",
+    "skill":"なし",
+    "target":"自分",
+    "cost":"なし",
+    "effect":"「元型バトルシート」にいる自分の元型の上に他の元型がぶつかったとき、それらの位置を入れ替える。このとき、元型を横方向に動かすことはできず、入れ替わるスペースがなければこの効果は発生しない。",
+    "invocation_verse":"",
+    "about":"世界法則<a  href=\"../world_order/ArchetypeTowerBattle.html\">「元型タワーバトル」</a>で効果を発揮する。元型に他の元型をよじ登ることができる腕を生やす。",
+    "authority":"<a  href=\"https://talto.cc/projects/eQgwQ8ztjdkZR8zbsSXYP\">元型タワーバトル</a>"
+},
+"崩れる体",{
+    "name":"崩れる体",
+    "ruby":"",
+    "category":"",
+    "type":"装備",
+    "skill":"なし",
+    "target":"自分",
+    "cost":"なし",
+    "effect":"このキャラクターがダメージを受けたとき、自分の立会人にピースゴーレムが現れる。この効果で現れるピースゴーレムの魔力の現在値と最大値はこの時受けたダメージに等しい。",
+    "invocation_verse":"",
+    "about":"",
+    "authority":""
+}
+]
