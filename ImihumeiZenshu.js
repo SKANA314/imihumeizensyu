@@ -51,17 +51,14 @@ function load_handler(){
             const data = await getData();
             // HTMLからIDを取得
             for(let j=0;j<get_query.length;j++){
-                id_list.push(get_query[j].innerHTML);
+                id_list.push(get_query[j].innerHTML.replace(/\s+/g, '')); // 空白を削除してIDを取得
             } 
             // テンプレートを割り当て
             for (let k = 0; k < id_list.length; k++) {
                 get_query[k].innerHTML=ApplyTemplate(check_list[i],id_list[k],data);
             }
             })();
-
-            
         }
-
     }
 }
 // メニューの関数
