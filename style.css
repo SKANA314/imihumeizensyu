@@ -94,7 +94,7 @@ table,tr,td,th{
 }
 table{
     width: 100%;
-    table-layout: fixed;
+    table-layout: auto;
 }
 th{
     width: 1px;
