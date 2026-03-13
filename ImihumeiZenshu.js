@@ -223,14 +223,14 @@ function ApplyTemplate(classtype,id,list={key:{name:"",ruby:"",category:"",type:
             case "magic_text":
                 return(
                 `<div class="magic_text">
-                    <p>
+                    <span>
                         【<b class="name">${list[id].name}</b><b class="ruby">${list[id].ruby ? "("+list[id].ruby+")" : ""}</b>】<rt class="category">${list[id].category}</rt> <rt class="type">${list[id].type}</rt><br>
                         <b>目標:</b><span class="target">${list[id].target}　</span><wbr>
                         <b>コスト:</b><span class="cost">${list[id].cost}　</span><wbr>
                         <b>指定特技:</b><span class="skill">${list[id].skill}　</span><br>
                         <span class="effect">${list[id].effect}</span><br>
                         <span class="invocation_verse"><i>${list[id].invocation_verse}</i></span>
-                    </p>
+                    </span>
                 </div>
                 <br>`);
             case "item":
