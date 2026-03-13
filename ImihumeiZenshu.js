@@ -6,6 +6,8 @@ window.addEventListener("load",load_handler);
 function load_handler(){
     // メニューを作成
     menu();
+    // 非同期処理
+    (async () => {
     // 要素を取得してテンプレートを割り当て
     // 取得したいクラスの一覧
     let check_list=["character","magic_table","item","nosos","magic_text"];
@@ -35,20 +37,7 @@ function load_handler(){
                 default:
                     break;
             }
-            async function getData() {
-            const response = await fetch(fetch_url);
-
-            if (!response.ok) {
-                throw new Error('ネットワークエラーが発生しました');
-            }
-
-            const data = await response.json();
-            return data; // ← これが getData() の返り値になる
-            }
-
-            // 使う側
-            (async () => {
-            const data = await getData();
+            let data = await getData(fetch_url);
             // HTMLからIDを取得
             for(let j=0;j<get_query.length;j++){
                 id_list.push(get_query[j].innerHTML.replace(/\s+/g, '')); // 空白を削除してIDを取得
@@ -57,9 +46,9 @@ function load_handler(){
             for (let k = 0; k < id_list.length; k++) {
                 get_query[k].innerHTML=ApplyTemplate(check_list[i],id_list[k],data);
             }
-            })();
         }
     }
+    })();
 }
 // メニューの関数
 function menu(){
@@ -109,8 +98,20 @@ window.addEventListener("resize",function(){
     }
 });
 
+// jsonを取得する関数
+async function getData(url) {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+        throw new Error('ネットワークエラーが発生しました');
+    }
+
+    const data = await response.json();
+    return data; // ← これが getData() の返り値になる
+}
+
+// テンプレートを割り当てる関数
 function ApplyTemplate(classtype,id,list={key:{name:"",ruby:"",category:"",type:"",skill:"",target:"",cost:"",effect:"",invocation_verse:"",about:"",authority:"",rank:"",attack:"",defense:"",source:"",HP:"",area:"",soul_skill:"",true_form:"",storage:"",requirements:"",quantity:"",ownership_type:"",ingredients:"",desire:"",prerequisite:"",prescription:"",patient:"",strength:"",onset:""}}){
-    // クラスに対応したテンプレートを割り当て
     for(let i=0;i<id.length;i++){
         // テンプレートを割り当て
         switch (classtype) {
@@ -119,7 +120,7 @@ function ApplyTemplate(classtype,id,list={key:{name:"",ruby:"",category:"",type:
                 `<div class="character">
                     <table>
                         <tr>
-                            <th colspan="8" class="title title">
+                            <th colspan="8" class="title">
                                 <div class="name">
                                     <ruby>${list[id].name}<rt class="ruby">${list[id].ruby}</rt></ruby>
                                 </div>
@@ -224,11 +225,11 @@ function ApplyTemplate(classtype,id,list={key:{name:"",ruby:"",category:"",type:
                 `<div class="magic_text">
                     <p>
                         【<b class="name">${list[id].name}</b><b class="ruby">${list[id].ruby ? "("+list[id].ruby+")" : ""}</b>】<rt class="category">${list[id].category}</rt> <rt class="type">${list[id].type}</rt><br>
-                        <b>目標:</b><rt class="target">${list[id].target}　</rt><wbr>
-                        <b>コスト:</b><rt class="cost">${list[id].cost}　</rt><wbr>
-                        <b>指定特技:</b><rt class="skill">${list[id].skill}　</rt><br>
-                        <rt class="effect">${list[id].effect}</rt><br>
-                        <rt class="invocation_verse"><i>${list[id].invocation_verse}</i></rt>
+                        <b>目標:</b><span class="target">${list[id].target}　</span><wbr>
+                        <b>コスト:</b><span class="cost">${list[id].cost}　</span><wbr>
+                        <b>指定特技:</b><span class="skill">${list[id].skill}　</span><br>
+                        <span class="effect">${list[id].effect}</span><br>
+                        <span class="invocation_verse"><i>${list[id].invocation_verse}</i></span>
                     </p>
                 </div>
                 <br>`);
