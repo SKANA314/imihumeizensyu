@@ -39,8 +39,11 @@ main h2{
 }
 /* フッター */
 footer{
-    margin: 0 auto;
-    width: 80%;
+    background-color: #333;
+    color: #eee;
+    /* width: 99%; */
+    /* padding-left: 20%; */
+    text-align: center;
 }
 /* .box{
     border: #666 1px solid;
