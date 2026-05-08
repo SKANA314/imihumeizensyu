@@ -55,12 +55,12 @@ function menu(){
     let menu=document.querySelector("#menu");
     menu.innerHTML=`
         <a href="../home/ImihumeiZenshu.html">ホーム</a>
-            <details name="menu">
+            <!-- <details name="menu">
                 <summary>世界法則</summary>
                 <div>
                     <li><a href="../world_order/ArchetypeTowerBattle.html">元型タワーバトル</a></li>
                 </div>
-            </details>
+            </details> -->
             <details name="menu">
                 <summary>傍流学派</summary>
                 <div>
