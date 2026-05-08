@@ -72,6 +72,12 @@ function menu(){
             <a href="../item/item.html">アイテム</a>
             <a href="../nosos/nosos.html">魔法病</a>
             <a href="../vermin/vermin.html">害魔</a>
+            <details name="menu">
+                <summary>その他</summary>
+                <div>
+                    <li><a href="../other/Why_are_you_here_table.html">なんで書籍卿が大法典に!?表</a></li>
+                </div>
+            </details>
         `;
 }
 // ボタンによるメニューの表示切り替え
