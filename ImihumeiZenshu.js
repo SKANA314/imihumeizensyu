@@ -58,7 +58,7 @@ function menu(){
             <details name="menu">
                 <summary>傍流学派</summary>
                 <div>
-                    <li><a href="../cotree/magic_survival_ch_fandom.html">マジックサバイバーズチャンネルファンダム</a></li>
+                    <li><a href="../cotree/hazard_survival_ch_fandom.html">ハザードバイバーズチャンネルファンダム</a></li>
                     <li><a href="../cotree/three_pronged.html">三叉路の導き教団</a></li>
                 </div>
             </details>
