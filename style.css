@@ -152,7 +152,7 @@ li{
     }
     /* ～～～ハンバーガーボタン～～～ */
     #hamburger{
-        display: block;
+        /* display: block;
         position: absolute;
         top: 10px;
         right: 10px;
@@ -161,6 +161,21 @@ li{
         height: 50px;
         font-size: 50px;
         line-height: 50px;
+        background-color: #333;
+        color: #fefefe;
+        border: #fefefe 1px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+
+        width: 50px;
+        height: 50px;
+        font-size: 40px; /* 少し小さめの方が中央に見える */
         background-color: #333;
         color: #fefefe;
         border: #fefefe 1px solid;
